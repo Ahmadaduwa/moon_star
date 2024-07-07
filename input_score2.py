@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd #
 
 uri = "output.xlsx"
 cols = ["id_student","Personality", "Expression", "Speaking", "charm"]
