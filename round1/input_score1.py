@@ -1,8 +1,7 @@
 import pandas as pd #
 
-uri = "output.xlsx"
-cols = ["id_student","Personality", "Expression", "Speaking", "charm"]
-df = pd.read_excel(uri, usecols=cols)
+uri = "round1.xlsx"
+df = pd.read_excel(uri)
 
 while (True) :
     print("Enter id_student (enter 0 to stop):")
@@ -29,5 +28,5 @@ while (True) :
         df.at[row_index, "Expression"] = score_Expression
         df.at[row_index, "Speaking"] = score_Speaking
         df.at[row_index, "charm"] = score_charm
-        df.to_excel('output.xlsx', index=False)
+        df.to_excel('round1.xlsx', index=False)
         print("ข้อมูลถูกบันทึกแล้ว")
